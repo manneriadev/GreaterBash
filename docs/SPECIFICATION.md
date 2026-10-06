@@ -1,7 +1,5 @@
 # GreaterBash specification
 
-[Русский](SPECIFICATION.ru.md)
-
 This document describes the language accepted by GreaterBash and the behaviour of the shell. It reflects the implementation in this repository.
 
 ## 1. Overview

@@ -1,11 +1,4 @@
-# GreaterBash
-
-[![Build](https://github.com/manneriadev/GreaterBash/actions/workflows/build.yml/badge.svg)](https://github.com/manneriadev/GreaterBash/actions/workflows/build.yml)
-![Language](https://img.shields.io/badge/language-C-blue)
-![Platform](https://img.shields.io/badge/platform-Linux-lightgrey)
-![License](https://img.shields.io/badge/license-MIT-green)
-
-**English** | [Русский](README.ru.md)
+# GreaterBash - command line shell
 
 A Unix shell written from scratch in C: hand-written lexer, recursive-descent parser, AST-based executor, POSIX job control and a built-in arithmetic expression evaluator.
 
@@ -27,7 +20,7 @@ A Unix shell written from scratch in C: hand-written lexer, recursive-descent pa
 Requirements: Linux (or WSL), `gcc`, `make`.
 
 ```bash
-git clone https://github.com/manneriadev/GreaterBash.git
+git clone <repository-url>
 cd GreaterBash
 make
 ./greaterbash
@@ -55,10 +48,10 @@ hello, world
 user@host:~$ sleep 30 &
 [1] 4242 &
 user@host:~$ jobs
-[1](pgid: 4242):sleep -> Background running
+1:sleep -> Background running
 ```
 
-More scripts are in [`examples/`](examples). Type `help` inside the shell for the built-in reference.
+More scripts are in `examples/`. Type `help` inside the shell for the built-in reference.
 
 ## Architecture
 
@@ -83,7 +76,7 @@ Every pipeline runs in its own process group; the shell hands the terminal to th
 
 ## Documentation
 
-Full language and behaviour description: [docs/SPECIFICATION.md](docs/SPECIFICATION.md) (Russian: [docs/SPECIFICATION.ru.md](docs/SPECIFICATION.ru.md)).
+Full language and behaviour description: docs/SPECIFICATION.md (Russian: docs/SPECIFICATION.ru.md).
 
 ## Known limitations
 
@@ -93,4 +86,4 @@ Full language and behaviour description: [docs/SPECIFICATION.md](docs/SPECIFICAT
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+MIT, see LICENSE.

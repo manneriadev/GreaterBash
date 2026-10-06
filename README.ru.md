@@ -1,11 +1,4 @@
-# GreaterBash
-
-[![Build](https://github.com/manneriadev/GreaterBash/actions/workflows/build.yml/badge.svg)](https://github.com/manneriadev/GreaterBash/actions/workflows/build.yml)
-![Language](https://img.shields.io/badge/language-C-blue)
-![Platform](https://img.shields.io/badge/platform-Linux-lightgrey)
-![License](https://img.shields.io/badge/license-MIT-green)
-
-[English](README.md) | **Русский**
+# GreaterBash - командная строка
 
 Unix-шелл, написанный с нуля на C: собственный лексер, рекурсивный парсер, исполнитель на основе AST, POSIX job control и встроенный вычислитель арифметических выражений.
 
@@ -27,7 +20,7 @@ Unix-шелл, написанный с нуля на C: собственный �
 Требования: Linux (или WSL), `gcc`, `make`.
 
 ```bash
-git clone https://github.com/manneriadev/GreaterBash.git
+git clone <адрес-репозитория>
 cd GreaterBash
 make
 ./greaterbash
@@ -55,10 +48,10 @@ hello, world
 user@host:~$ sleep 30 &
 [1] 4242 &
 user@host:~$ jobs
-[1](pgid: 4242):sleep -> Background running
+1:sleep -> Background running
 ```
 
-Больше сценариев в папке [`examples/`](examples). Внутри шелла команда `help` выводит справку.
+Больше сценариев в папке `examples/`. Внутри шелла команда `help` выводит справку.
 
 ## Архитектура
 
@@ -83,7 +76,7 @@ utils/         список, хеш-таблица (переменные), вс�
 
 ## Документация
 
-Полное описание языка и поведения: [docs/SPECIFICATION.ru.md](docs/SPECIFICATION.ru.md) (English: [docs/SPECIFICATION.md](docs/SPECIFICATION.md)).
+Полное описание языка и поведения: docs/SPECIFICATION.ru.md (English: docs/SPECIFICATION.md).
 
 ## Известные ограничения
 
@@ -93,4 +86,4 @@ utils/         список, хеш-таблица (переменные), вс�
 
 ## Лицензия
 
-MIT, см. [LICENSE](LICENSE).
+MIT, см. LICENSE.
