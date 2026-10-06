@@ -36,7 +36,7 @@ int read_command(char* buffer , size_t size)
     while(1)
     {
         char c;
-        int n = read(STDIN_FILENO, &c, 1)
+        int n = read(STDIN_FILENO, &c, 1);
 
         if(n == 0) continue;
         if(n < 0) break;

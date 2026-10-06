@@ -1,0 +1,20 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: make
+      - name: Build with sanitizers
+        run: make debug
+      - name: Smoke test
+        run: |
+          make clean && make
+          printf 'echo $((2+3*4))\nexit\n' | ./greaterbash | grep -q 14
