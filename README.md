@@ -83,7 +83,3 @@ Full language and behaviour description: docs/SPECIFICATION.md (Russian: docs/SP
 - Operator precedence differs from POSIX shells: `|` binds looser than `&&`/`||`, so `a | b && c` is parsed as `a | (b && c)`. See the specification.
 - `$(command)` substitution, globbing (`*`), here-documents and shell functions are not implemented.
 - `echo` and `pwd` are executed as external programs, not built-ins.
-
-## License
-
-MIT, see LICENSE.
