@@ -455,7 +455,7 @@ static bool match(Lexer* lexer , char c)
 
 static bool match_oper_char(char c)
 {
-    char opers[] = {'&','>','<','|',';','(',')','\n'};
+    char opers[] = {'&','>','<','|',';','(',')','\n','\0'};
     bool tmp = false;
     for(size_t i = 0 ; opers[i] != '\0' ; ++i)
     {
